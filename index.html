@@ -3,10 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Akan Name Generator</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <form action="/" method="GET">
-    </form>    
+    <div class="container">
+        <div class="header">
+            <h2>Akan Name Generator</h2>
+        </div>
+        <form class="form">
+            <div class="form-control">
+                <label for="year">Birth Year</label>
+                <input type="text" placeholder="e.g. 1900" id="year">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+
+            <div class="form-control">
+                <label for="month">Birth Month</label>
+                <input type="text" placeholder="e.g. 1 for January" id="month">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+
+            <div class="form-control">
+                <label for="date">Birth Date</label>
+                <input type="text" placeholder="e.g. 1" id="date">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+               <small>Error message</small>
+            </div>
+            
+            <div class="gender-radio" id="gender">
+                <label id="gender-label">Gender</label>
+                <div>
+                    <label for="male">Male</label>
+                    <input type="radio" name="male-female" id="male" checked>
+                </div>
+                <div>
+                    <label for="male">Female</label>
+                    <input type="radio" name="male-female" id="female">
+                </div>
+            </div>
+
+            <div>
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+    <script src="scripts.js"></script>
+<!-- 
+    <footer>
+        <p id="main-footer">Copyright &copy; 2020 <a href="https://github.com/dannywamuya">Danny Wamuya</a></p>
+    </footer> -->
 </body>
 </html>
