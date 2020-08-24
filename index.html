@@ -5,34 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Akan Name Generator</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/scripts.js" charset="UTF-8"></script>
 </head>
 <body>
     <div class="container">
         <div class="header">
             <h2>Akan Name Generator</h2>
         </div>
-        <form class="form">
+        <form class="form" action="submission.html" method="GET" onsubmit="">
             <div class="form-control">
                 <label for="year">Birth Year</label>
                 <input type="text" placeholder="e.g. 1900" id="year">
-                <i class="fas fa-check-circle"></i>
-                <i class="fas fa-exclamation-circle"></i>
+                <i class="fa fa-check-circle"></i>
+                <i class="fa fa-exclamation-circle"></i>
                 <small>Error message</small>
             </div>
 
-            <div class="form-control">
+            <div class="form-control"> 
                 <label for="month">Birth Month</label>
                 <input type="text" placeholder="e.g. 1 for January" id="month">
-                <i class="fas fa-check-circle"></i>
-                <i class="fas fa-exclamation-circle"></i>
+                <i class="fa fa-check-circle"></i>
+                <i class="fa fa-exclamation-circle"></i>
                 <small>Error message</small>
             </div>
 
             <div class="form-control">
                 <label for="date">Birth Date</label>
                 <input type="text" placeholder="e.g. 1" id="date">
-                <i class="fas fa-check-circle"></i>
-                <i class="fas fa-exclamation-circle"></i>
+                <i class="fa fa-check-circle"></i>
+                <i class="fa fa-exclamation-circle"></i>
                <small>Error message</small>
             </div>
             
@@ -40,11 +42,11 @@
                 <label id="gender-label">Gender</label>
                 <div>
                     <label for="male">Male</label>
-                    <input type="radio" name="male-female" id="male" checked>
+                    <input type="radio" name="rad" id="male" value="yes">
                 </div>
                 <div>
                     <label for="male">Female</label>
-                    <input type="radio" name="male-female" id="female">
+                    <input type="radio" name="rad" id="female" value="no">
                 </div>
             </div>
 
@@ -52,11 +54,6 @@
                 <button type="submit">Submit</button>
             </div>
         </form>
-    </div>
-    <script src="scripts.js"></script>
-<!-- 
-    <footer>
-        <p id="main-footer">Copyright &copy; 2020 <a href="https://github.com/dannywamuya">Danny Wamuya</a></p>
-    </footer> -->
+    </div> 
 </body>
 </html>
