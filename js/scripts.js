@@ -10,10 +10,10 @@ function getInput(){
     if(year == ""){
         alert("Enter valid year")
         return false;
-    }else if (month <= 0 && month > 12){
+    }else if (month <= 0 || month > 12){
         alert("Enter valid month")
         return false;
-    }else if (date <= 0 && date > 31){
+    }else if (date <= 0 || date > 31){
         alert("Enter valid date")
         return false;
     }
