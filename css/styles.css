@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 
 * {
     box-sizing: border box;    
@@ -26,10 +27,20 @@ body {
     background-color: #48cae4 ;
     border-bottom: 1px solid #f0f0f0;
     padding: 20px 40px;
+    text-align: center;
 }
 
 .header h2 {
     margin: 0;
+}
+
+
+.description {
+    padding: 20px;
+    font-family: 'Indie Flower', cursive;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.1rem;
 }
 
 .form {
@@ -56,38 +67,6 @@ body {
     font-size: 14px;
     padding: 10px;
     width: 100%;
-}
-
-.form-control.success input {
-    border-color: #2ecc71;
-}
-
-.form-control.error input {
-    border-color: #e74c3c;
-}
-
-.form-control i {
-    position: absolute;
-    top: 40px;
-    right: 10px;
-    visibility: hidden;
-}
-
-.form-control.success i.fa-check-circle {
-    visibility: visible;
-    color: #2ecc71;
-}
-
-.form-control.error i.fa-exclamation-circle {
-    visibility: visible;
-    color: #e74c3c;
-}
-
-.form-control small {
-    visibility: hidden;
-    position: absolute;
-    bottom: 0;
-    left: 0;
 }
 
 .gender-radio {
@@ -132,4 +111,13 @@ button {
 button:hover {
     background-color: rgba(72, 169, 228, 0.8);
     padding: 12px;
+}
+
+.result-box {
+    padding: 20px;
+    font-family: inherit;
+    font-weight: bold;
+    font-size: inherit;
+    color: inherit;
+    text-align: center;
 }
